@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11v2</title>
+</head>
+<body>
+    <script>
+        function entero()
+        {
+        let numero;
+        numero=parseInt(prompt("dime un numero"))
+        if(numero>0)
+    {
+        return"es un numero entero"
+    }
+    else
+    {
+        if(numero<0)
+            {
+                return"es un numero negativo"
+            }
+            else
+            {
+                return"el numero es 0"
+            }
+    }
+        }
+        let resultado=entero()
+        document.write(resultado)
+    </script>
+</body>
+</html>

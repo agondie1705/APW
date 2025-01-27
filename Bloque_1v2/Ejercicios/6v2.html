@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6v2</title>
+</head>
+<body>
+    <script>
+        function contraseñas()
+        {
+        let contraseña , ccontraseña
+        contraseña=prompt("introduce la contraseña")
+        ccontraseña=prompt("vuelve a introducir la contraseña")
+
+        if(contraseña==ccontraseña)
+        {
+            return"accediste"
+        }
+        else
+        {
+            return"no coinciden"
+        }
+        }
+        let resultado=contraseñas()
+        document.write(resultado)
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej9</title>
+</head>
+<body>
+    <script>
+        let notas=0, notatotal=0, promedio=0, acumulador=0;
+        for(acumulador>0; acumulador<3; acumulador++)
+    {
+        notas=parseInt(prompt("dime las notas"));
+        notatotal=notatotal+notas
+    }
+    promedio=notatotal/acumulador
+    if(promedio>=4)
+        {
+            document.write("regular")
+        }
+        else
+        {
+            document.write("reprobado")
+        }
+    </script>
+</body>
+</html>

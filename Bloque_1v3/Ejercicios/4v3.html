@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4v3</title>
+</head>
+<body>
+    <script>
+       function mostrarPago(numero1 , numero2 , numero3 , numero4 , suma , producto)
+        {
+        return"La suma de todos los datos es: " +suma
+        return"<br>El producto de todos los numeros es: " +producto
+        }
+        numero1=parseInt(prompt("dime el primer numero"))
+        numero2=parseInt(prompt("dime el segundo numero"))
+        numero3=parseInt(prompt("dime el tercer numero"))
+        numero4=parseInt(prompt("dime el cuarto numero"))
+        suma=numero1+numero2+numero3+numero4
+        producto=numero1*numero2*numero3*numero4
+        let resultado=mostrarPago(numero1 , numero2 , numero3 , numero4 , suma , producto)
+        document.write(resultado)
+    </script>
+</body>
+</html>

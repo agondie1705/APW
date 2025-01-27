@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5v3</title>
+</head>
+<body>
+    <script>
+        function mostrarPago(precio , cantidadc , preciototal)
+        {
+        return"El producto cuesta: " +precio
+        return"<br>El comprador lleva " +cantidadc+ " productos"
+        return"<br>Le va a costar " +preciototal+ "€"
+        }
+        precio=parseInt(prompt("dime el precio del producto"))
+        cantidadc=parseInt(prompt("cuanto productos lleva el comprador"))
+        preciototal=precio*cantidadc
+        let resultado=mostrarPago(precio , cantidadc , preciototal)
+        document.write(resultado)
+    </script>
+</body>
+</html>

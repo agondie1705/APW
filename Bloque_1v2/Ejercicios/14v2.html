@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14v2</title>
+</head>
+<body>
+    <script>
+        function calculo()
+        {
+        let sueldo, años, porcentaje, total
+        sueldo=parseInt(prompt("dime el sueldo"))
+        años=parseInt(prompt("dime los años de antiguedad"))
+        if(sueldo<500 && años>=10)
+            {
+               porcentaje=sueldo*20/100
+                total=sueldo+porcentaje
+                return"la suma es "+total+ "€"  
+            }
+            else
+            {
+                if(sueldo<500 && años<10)
+                    {
+                      porcentaje=sueldo*5/100
+                      total=sueldo+porcentaje
+                      return"la suma es "+total+ "€"  
+                    }
+                    else
+                    {
+                        if(sueldo>=500)
+                            {
+                                return"no obtiene ningun porcentaje extra su dinero queda asi: " +sueldo+ "€"
+                            }
+                    }
+            }
+        }
+        let resultado=calculo()
+        document.write(resultado)
+    </script>
+</body>
+</html>

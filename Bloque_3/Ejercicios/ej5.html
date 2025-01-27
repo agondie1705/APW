@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <script src="../js/ej5.js"></script>
+</head>
+<body>
+    Seleccione su Pizza <br>
+    <label for="piza">Tipo de Pizza:</label>
+    <select id="piza" onchange="mostrarPrecio()">
+        <option value="jamon y queso" id="jq">Jamón y Queso</option>
+        <option value="muzzarella" id="muza">Muzzarella</option>
+        <option value="morrones" id="morro">Morrones</option>
+    </select>
+    <br><br>
+    <label for="precio">Precio:</label>
+    <input type="text" id="precio" readonly>
+</body>
+</html>

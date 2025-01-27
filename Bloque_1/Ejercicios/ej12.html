@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej12</title>
+</head>
+<body>
+    <script>
+        let numero;
+        numero=parseInt(prompt("dime un numero de 1,2 o 3 cifras"))
+
+        if(numero>=0 & numero<10)
+    {
+        document.write("en numero tiene una cifra")
+    }
+    else
+    {
+        if(numero>=10 & numero<100)
+        {
+            document.write("el numero tiene dos cifras")
+        }
+        else
+        {
+            if(numero>=100 & numero<1000)
+                {
+                    document.write("en numero tiene tres cifras")
+                }
+                else 
+                {
+                    document.write("ha introducido un valor erroneo")
+                }
+        }
+    }
+    </script>
+</body>
+</html>

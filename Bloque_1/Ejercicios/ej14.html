@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej14</title>
+</head>
+<body>
+    <script>
+        let sueldo, años, porcentaje, total
+        sueldo=parseInt(prompt("dime el sueldo"))
+        años=parseInt(prompt("dime los años de antiguedad"))
+        if(sueldo<500 && años>=10)
+            {
+               porcentaje=sueldo*20/100
+                total=sueldo+porcentaje
+                document.write("la suma es "+total+ "€" )  
+            }
+            else
+            {
+                if(sueldo<500 && años<10)
+                    {
+                      porcentaje=sueldo*5/100
+                      total=sueldo+porcentaje
+                      document.write("la suma es "+total+ "€" )  
+                    }
+                    else
+                    {
+                        if(sueldo>=500)
+                            {
+                                document.write("no obtiene ningun porcentaje extra su dinero queda asi: " +sueldo+ "€")
+                            }
+                    }
+            }
+    </script>
+</body>
+</html>

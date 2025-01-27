@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8v2</title>
+</head>
+<body>
+    <script>
+        function notas()
+        {
+        let nota1,nota2,nota3,promedio
+        nota1=prompt("dime la primera nota")
+        nota2=prompt("dime la segundo nota")
+        nota3=prompt("dime la tercera nota")
+        promedio=nota1+nota2+nota3/3
+        if(promedio>=4)
+        {
+            return"regular"
+        }
+        else
+        {
+            return"reprobado"
+        }
+        }
+        let resultado=notas()
+        document.write(resultado)
+    </script>
+</body>
+</html>

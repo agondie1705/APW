@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7v2</title>
+</head>
+<body>
+    <script>
+        function cuentas()
+        {
+        let numero1 , numero2 , suma , resta , multi , divi
+        numero1=prompt("dime un numero")
+        numero2=prompt("dime el segundo numero")
+        function suma()
+        {
+            suma=numero1+numero2
+            return"La suma es: " +suma
+        }
+        function resta()
+        {
+            resta=numero1-numero2
+            return"la diferencia es: " +resta
+        }
+        function multi()
+        {
+            multi=numero1*numero2
+            return "el producto es : "+multi
+        }
+        function divi()
+        {
+            divi=numero1/numero2
+            return "la division da :" +divi
+        }
+        let textoEnPantalla;
+                if (numero1 > numero2) {
+                    let sumaResultado=suma()
+                    let restaResultado=resta()
+                    texto="El numero 1 es mayor <br>"+"La suma es: " + sumaResultado + "<br>"+"La diferencia es: " + restaResultado
+                    
+                } else {
+                    let multiResultado=multi()
+                    let diviResultado=divi()
+                    texto="El numero 1 es menor <br>"+"El producto es: " + multiResultado + "<br>"+"La division es: " + diviResultado
+                    
+                }
+                return texto
+        }
+        let resultado=cuentas()
+        document.write(resultado)
+    </script>
+</body>
+</html>
