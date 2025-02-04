@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lista1 = [];
+        let lista2 = [];
+        let meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+        
+        for (let i = 0; i < 5; i++) {
+            let num = parseInt(prompt("Ingrese un número entre 0 y 11"));
+            while (num < 0 || num > 11 || isNaN(num)) {
+                num = parseInt(prompt("Ingrese un número entre 0 y 11"));
+            }
+            lista1.push(num);
+            lista2.push(num + 1);
+        }
+        
+        let resultado = "";
+        for (let i = 0; i < lista2.length; i++) {
+            if (lista2[i] >= 12) {
+                resultado += "Diciembre<br>";
+            } else {
+                resultado += meses[lista2[i]] + "<br>";
+            }
+        }
+        
+        document.write(resultado);
+    </script>
+</body>
+</html>
